@@ -27,9 +27,7 @@ cat <<EOF > ~/config.json
             },
             "streamSettings": {
                 "network": "ws",
-                "wsSettings": {
                 "security": "none"
-                }
             }
         }
     ],
