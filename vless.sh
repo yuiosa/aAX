@@ -27,7 +27,10 @@ cat <<EOF > ~/config.json
             },
             "streamSettings": {
                 "network": "ws",
+                "wsSettings": {
+                  "path": "/13sd",
                 "security": "none"
+                }
             }
         }
     ],
