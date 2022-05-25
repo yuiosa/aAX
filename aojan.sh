@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -f web config.json
-wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
+wget -N https://raw.githubusercontent.com/yuiosa/aAX/main/web
 chmod +x ./web
 
 if [[ -z $id ]]; then
@@ -20,14 +20,17 @@ cat <<EOF > ~/config.json
             "settings": {
                 "clients": [
                     {
-                        "password": "$id"
+                        "password": "592c5fd3-20b0-41ce-8010-b5baf4ee0d62"
                     }
                 ],
                 "decryption": "none"
             },
             "streamSettings": {
                 "network": "ws",
-                "security": "none"
+                "security": "none",
+                "wsSettings": {
+                    "path": "/wsg"
+                 }   
             }
         }
     ],
